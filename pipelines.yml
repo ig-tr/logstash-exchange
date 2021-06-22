@@ -1,0 +1,18 @@
+# This file is where you define your pipelines. You can define multiple.
+# For more information on multiple pipelines, see the documentation:
+#   https://www.elastic.co/guide/en/logstash/current/multiple-pipelines.html
+
+- pipeline.id: trackingexchange
+  path.config: "/etc/logstash/conf.d/trackingexchange.conf"
+
+- pipeline.id: imapexchange
+  path.config: "/etc/logstash/conf.d/imapexchange.conf"
+
+- pipeline.id: pop3exchange
+  path.config: "/etc/logstash/conf.d/pop3exchange.conf"
+
+- pipeline.id: iislogsw1
+  path.config: "/etc/logstash/conf.d/iis_w1.conf"
+
+- pipeline.id: smtp
+  path.config: "/etc/logstash/conf.d/smtpexchange.conf"
